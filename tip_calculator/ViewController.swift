@@ -10,14 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var TipLabel: UILabel!
     @IBOutlet weak var TotalLabel: UILabel!
     @IBOutlet weak var BillField: UITextField!
+    @IBOutlet weak var TipLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    @IBOutlet weak var splitLabel: UITextField!
+    @IBOutlet weak var eachPersonLabel: UILabel!
+    
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+       
+        
+    
+    super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
@@ -47,12 +53,20 @@ class ViewController: UIViewController {
     
     @IBAction func calculateSplit(_ sender: Any) {
         
-        print("Hi")
+        //get split amount
+        let split = Double(splitLabel.text!) ?? 1
     
-    
-    
-    
-    
+        //calculate total amount
+        let billAmount = Double(BillField.text!) ?? 0
+        let tipPercentages = [0.05, 0.10, 0.15, 0.20, 0.25]
+        let tip = billAmount * tipPercentages[tipControl.selectedSegmentIndex]
+        let total = billAmount + tip
+        
+        //calculate each person pays
+        let each = total / split
+        
+        //update each person pays
+        eachPersonLabel.text = String(format: "$%.2f", each)
     }
     
     
