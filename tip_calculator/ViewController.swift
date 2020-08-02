@@ -16,8 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var splitLabel: UITextField!
     @IBOutlet weak var eachPersonLabel: UILabel!
+    @IBOutlet weak var splitStepperLabel: UILabel!
     
-    
+    @IBAction func stepper(_ sender: UIStepper) {
+       
+        splitStepperLabel.text =
+            String(format: "%.0f", sender.value)
+    }
     
     override func viewDidLoad() {
        
