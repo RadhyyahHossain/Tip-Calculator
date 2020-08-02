@@ -30,11 +30,11 @@ class SettingsViewController: UIViewController {
         if sender.isOn{
 
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .dark
+                window.overrideUserInterfaceStyle = .light
             }
         } else {
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .light
+                window.overrideUserInterfaceStyle = .dark
             }
 
         }

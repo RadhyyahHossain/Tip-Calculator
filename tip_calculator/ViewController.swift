@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Lottie
+
+
 
 class ViewController: UIViewController {
 
@@ -17,19 +20,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var splitLabel: UITextField!
     @IBOutlet weak var eachPersonLabel: UILabel!
 
-
-
-    override func viewDidLoad() {
-       
-        
+    @IBOutlet weak var progressAnimationView: AnimationView!
     
-    super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    //var animationView: AnimationView?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        progressAnimationView?.loopMode = .loop
+        progressAnimationView?.animationSpeed = 2
+        view.addSubview(progressAnimationView!)
+        progressAnimationView?.play()
     }
-
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        progressAnimationView.play()
+    }
+    
+    
+    
+    
+    
+    
     @IBAction func OnTap(_ sender: Any) {
-    print("Hello")
-    view.endEditing(true)
+        print("Hello")
+        view.endEditing(true)
     }
 
     @IBAction func CalculateTip(_ sender: Any) {
