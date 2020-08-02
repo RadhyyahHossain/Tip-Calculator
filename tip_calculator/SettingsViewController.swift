@@ -10,11 +10,26 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var cardview: UIView!
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         switchTest.isOn =  UserDefaults.standard.bool(forKey: "switchState")
 
-        // Do any additional setup after loading the view.
+        /* Do any additional setup after loading the view.
+        cardview.layer.shadowColor = UIColor.black.cgColor
+        cardview.layer.shadowOpacity = 0.2
+        cardview.layer.shadowOffset = .zero
+        cardview.layer.shadowRadius = 10
+        cardview.layer.shadowPath = UIBezierPath(rect: cardview.bounds).cgPath
+        cardview.layer.shouldRasterize = true
+        cardview.layer.cornerRadius = 10;
+        //cardview.layer.masksToBounds = true;*/
+
+        
+        
     }
     
     
@@ -29,21 +44,15 @@ class SettingsViewController: UIViewController {
     @IBAction func switchDidChange(_ sender: UISwitch) {
         if sender.isOn{
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .dark
+                window.overrideUserInterfaceStyle = .light
             }
         } else {
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .light
+                window.overrideUserInterfaceStyle = .dark
             }
 
         }
     }
-    
-    
-    
-    
-    
-    
     
     
     

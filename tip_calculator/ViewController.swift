@@ -22,7 +22,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var progressAnimationView: AnimationView!
     
-    //var animationView: AnimationView?
+    @IBOutlet weak var card1: UIView!
+
+    @IBOutlet weak var card2: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,30 @@ class ViewController: UIViewController {
         progressAnimationView?.animationSpeed = 2
         view.addSubview(progressAnimationView!)
         progressAnimationView?.play()
+        
+        //code for card 1 shadow
+        card1.layer.shadowColor = UIColor.black.cgColor
+        card1.layer.shadowOpacity = 0.2
+        card1.layer.shadowOffset = .zero
+        card1.layer.shadowRadius = 10
+        card1.layer.shadowPath = UIBezierPath(rect: card1.bounds).cgPath
+        card1.layer.shouldRasterize = true
+        card1.layer.cornerRadius = 10;
+        //cardview.layer.masksToBounds = true;
+        
+        
+        //code for card 2 shadow
+        
+        card2.layer.shadowColor = UIColor.black.cgColor
+        card2.layer.shadowOpacity = 0.2
+        card2.layer.shadowOffset = .zero
+        card2.layer.shadowRadius = 10
+        card2.layer.shadowPath = UIBezierPath(rect: card2.bounds).cgPath
+        card2.layer.shouldRasterize = true
+        card2.layer.cornerRadius = 10;
+        
+        
+        
     }
     
     
@@ -86,10 +113,14 @@ class ViewController: UIViewController {
         
         //update each person pays
         eachPersonLabel.text = String(format: "$%.2f", each)
-    }
+        }
     
-    
-    
-    
-}
 
+
+
+
+
+
+
+
+}
