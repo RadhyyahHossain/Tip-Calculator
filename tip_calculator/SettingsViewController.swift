@@ -18,16 +18,6 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         switchTest.isOn =  UserDefaults.standard.bool(forKey: "switchState")
 
-        /* Do any additional setup after loading the view.
-        cardview.layer.shadowColor = UIColor.black.cgColor
-        cardview.layer.shadowOpacity = 0.2
-        cardview.layer.shadowOffset = .zero
-        cardview.layer.shadowRadius = 10
-        cardview.layer.shadowPath = UIBezierPath(rect: cardview.bounds).cgPath
-        cardview.layer.shouldRasterize = true
-        cardview.layer.cornerRadius = 10;
-        //cardview.layer.masksToBounds = true;*/
-
         
         
     }
