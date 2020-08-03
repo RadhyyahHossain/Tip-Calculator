@@ -34,11 +34,11 @@ class SettingsViewController: UIViewController {
     @IBAction func switchDidChange(_ sender: UISwitch) {
         if sender.isOn{
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .light
+                window.overrideUserInterfaceStyle = .dark
             }
         } else {
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .dark
+                window.overrideUserInterfaceStyle = .light
             }
 
         }
