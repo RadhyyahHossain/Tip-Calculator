@@ -1,40 +1,45 @@
 # tip_calculator_1
-# Pre-work - *Name of App Here*
+# Pre-work - *Tip Calculator*
 
-**Name of your app** is a tip calculator application for iOS.
+**Tipper** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Radhyyah Hossain**
 
-Time spent: **X** hours spent in total
+Time spent: **48** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
 * [ ] Settings page to change the default tip percentage.
-* [ ] UI animations
+* [x] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
+ 
+- [x] Added more tip percentages options.
+- [x] Created a "Split Total by Number of People" field to calculate how much to split the total after tip by. 
+- [x] Created a "Each Person Pays" section that calculates how much each person pays based on the total after tip and the "Split Total by Number of People"
+- [x] Created a seperate Settings Page that enables light and dark mode.
+- [x] Used Lottie animations to add an animation in the main screen for user enjoyment. 
+- [x] Created a launch page with a logo for the Tipper app. 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/eKmf4Pd.gif' title='Radhyyah Hossain-Tipper-Walkthrough' width='' alt='Tipper App Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was really fun adding in the Lottie Animations and making/adding my own logo for the app.
 
 ## License
 
