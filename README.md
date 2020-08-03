@@ -32,6 +32,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
+![Alt Text](https://imgur.com/a/eKmf4Pd.gif)
 
 <img src='https://imgur.com/a/eKmf4Pd.gif' title='Radhyyah Hossain-Tipper-Walkthrough' width='' alt='Tipper App Walkthrough' />
 
