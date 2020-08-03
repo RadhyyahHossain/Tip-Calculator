@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 ![](https://imgur.com/a/eKmf4Pd.gif)
 
-<img src='https://imgur.com/a/eKmf4Pd.gif' title='Radhyyah Hossain-Tipper-Walkthrough' width='50px' alt='Tipper App Walkthrough' />
+<img src="https://imgur.com/a/eKmf4Pd.gif" title='Radhyyah Hossain-Tipper-Walkthrough' width='250' alt='Tipper App Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
